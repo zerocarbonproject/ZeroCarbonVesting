@@ -1,2 +1,2 @@
 #!/bin/bash
-truffle-flattener contracts/ZCDistribution.sol > contracts_flat/ZCDistribution.sol
+truffle-flattener contracts/ZCVesting.sol > contracts_flat/ZCVesting.sol
