@@ -119,6 +119,9 @@ contract ZCVesting {
      * @param _releaseAddr The Address where to release funds to
      */
     constructor(ERC20Basic _tokenAddr, IZCDistribution _distAddr, address _releaseAddr) public {
+        assert(_tokenAddr != address(0));
+        assert(_distAddr != address(0));
+        assert(_releaseAddr != address(0));
         token = _tokenAddr;
         dist = _distAddr;
         releaseAddress = _releaseAddr;
